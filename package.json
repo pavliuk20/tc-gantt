@@ -1,6 +1,6 @@
 {
     "name": "tc-gantt",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A simple, modern, interactive gantt library for the web",
     "main": "src/index.js",
     "type": "module",
@@ -39,9 +39,9 @@
     "author": "TCS",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/tc-gantt/gantt/issues"
+        "url": "https://github.com/pavliuk20/tc-gantt/issues"
     },
-    "homepage": "https://github.com/tc-gantt/gantt",
+    "homepage": "https://github.com/pavliuk20/tc-gantt",
     "devDependencies": {
         "eslint": "^9.15.0",
         "eslint-config-prettier": "^2.9.0",
