@@ -330,6 +330,18 @@
             border-radius: 3px;
         }
 
+        & .popup {
+            position: absolute;
+            top: -30px; /* or adjust as needed */
+            left: 0;
+            z-index: 10;
+            background: white;
+            border: 1px solid #ccc;
+            padding: 4px 8px;
+            font-size: 12px;
+            pointer-events: auto;
+        }
+
         &:hover {
             .bar {
                 transition: transform 0.3s ease;

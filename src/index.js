@@ -1511,13 +1511,17 @@ export default class Gantt {
 
     show_popup(opts) {
         if (this.options.popup === false) return;
-        if (!this.popup) {
-            this.popup = new Popup(
-                this.$popup_wrapper,
-                this.options.popup,
-                this,
-            );
-        }
+        const bar = this.get_bar(opts.task.id);
+        if (!bar) return;
+
+        // Ensure only one popup at a time
+        this.hide_popup();
+
+        this.popup = new Popup(
+            bar.group, // append popup inside the specific bar
+            this.options.popup,
+            this
+        );
         this.popup.show(opts);
     }
 
